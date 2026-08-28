@@ -1,4 +1,11 @@
+//! Sieve of Eratosthenes
+//! Generates a boolean lookup table indicating which numbers up to a given range are primes
+//! Returns a boolean vector where true indicates a prime number and false indicates a composite number
+
 fn sieve_of_eratosthenes(range: usize) -> Vec<bool>{
+    if range < 2 {
+        return vec![false; range + 1];
+    }
     let mut primes= vec![true; range+1];
     primes[0] = false;
     primes[1] = false;
