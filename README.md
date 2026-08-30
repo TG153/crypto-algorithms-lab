@@ -1,2 +1,2 @@
 # crypto-algorithms-lab
-Educational cryptography and prime-generation implementations in Rust and Python
+cryptography implementations in Rust and Python
